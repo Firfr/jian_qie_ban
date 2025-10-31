@@ -1,0 +1,15 @@
+# version: '3'
+name: jian_qie_ban
+services:
+  jian_qie_ban:
+    container_name: jian_qie_ban
+    image: firfe/jian_qie_ban:1.0
+    restart: always
+    logging:
+      options:
+        max-size: 1m
+        max-file: '1'
+    ports:
+      - 5159:5159
+    volumes:
+      - ./data:/data

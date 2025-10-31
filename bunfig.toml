@@ -1,0 +1,5 @@
+# Bun配置文件 - 使用淘宝源
+
+# 设置npm注册表镜像为淘宝源
+[install]
+npmRegistry = "https://registry.npmmirror.com"

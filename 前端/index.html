@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>局域网剪切板</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="flex容器">
+    <div class="顶部区域">
+      <h1 onclick="toggleTheme()" title="点击切换主题">局域网剪切板</h1>
+      
+      <div class="输入区域">
+        <input type="text" id="id_输入框" placeholder="输入要保存的内容...">
+        <button id="id_保存按钮" title="保存内容">➕</button>
+      </div>
+      
+      <div class="链接区域">
+        <a href="https://space.bilibili.com/17547201" target="_blank">开发者 秦曱凧</a>
+        <a href="https://github.com/Firfr/jian_qie_ban" target="_blank">GitHub</a>
+        <a href="https://gitee.com/firfe/jian_qie_ban" target="_blank">Gitee</a>
+      </div>
+    </div>
+    
+    <div class="条目区域">
+      <div class="列表" id="id_列表">
+        <div class="空提示">暂无内容</div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="js/入口.js"></script>
+</body>
+</html>
