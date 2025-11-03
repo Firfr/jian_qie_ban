@@ -3,7 +3,8 @@ import { toggleTheme, restoreTheme } from './主题.js';
 import { 从本地存储恢复列表, 保存数据到本地存储, 获取本地存储的数据 } from './存储.js';
 import { 更新列表, 更新标题颜色 } from './界面.js';
 import { 初始化WebSocket, 发送WebSocket消息 } from './网络连接.js';
-import { 复制内容, 删除内容 } from './工具.js';
+import { 删除内容 } from './工具.js';
+import { 复制内容 } from './剪切板写入.js';
 
 // 全局变量
 let _已显示本地数据 = false;

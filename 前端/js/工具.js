@@ -1,35 +1,5 @@
 // 工具函数
 
-// 复制内容到剪贴板
-export function 复制内容(内容) {
-  const _按钮 = event?.target;
-  const _原文本 = _按钮?.textContent || '📋';
-  
-  navigator.clipboard.writeText(内容).then(() => {
-    // 显示复制成功提示
-    if (_按钮) {
-      _按钮.textContent = '✅';
-      _按钮.style.backgroundColor = '#4CAF50';
-      
-      setTimeout(() => {
-        _按钮.textContent = _原文本;
-        _按钮.style.backgroundColor = '';
-      }, 1500);
-    }
-  }).catch(err => {
-    console.error('复制失败:', err);
-    if (_按钮) {
-      _按钮.textContent = '❌';
-      _按钮.style.backgroundColor = '#f44336';
-      
-      setTimeout(() => {
-        _按钮.textContent = _原文本;
-        _按钮.style.backgroundColor = '';
-      }, 1500);
-    }
-  });
-}
-
 // 导入WebSocket发送函数
 import { 发送WebSocket消息 } from './网络连接.js';
 

@@ -40,7 +40,7 @@ export function 更新列表(items, saveToStorageCallback) {
     _复制按钮.className = '复制按钮';
     _复制按钮.textContent = '📋';
     _复制按钮.title = '复制内容';
-    _复制按钮.onclick = () => 复制内容(item.content);
+    _复制按钮.onclick = function() { 复制内容(item.content, this); };
     
     _条目.appendChild(_序号);
     _条目.appendChild(_删除按钮);
